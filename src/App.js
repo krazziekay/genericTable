@@ -7,10 +7,10 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            displayHeaders: [
+            displayHeaders: [//This array holds those keys whose data is to be viewed in the table
                 {
-                    fieldName : 'userGrp',
-                    displayName : 'User Group'
+                    fieldName : 'userGrp',//this is used to map and get the actual data
+                    displayName : 'User Group'//this gets displayed in the table header
                 },
                 {
                     fieldName : 'title',

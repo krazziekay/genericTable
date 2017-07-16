@@ -19,7 +19,6 @@ class SmartTable extends Component {
     }
 
     displayChildren = (data, index) => {
-        console.log("Display the data for index: ", index, " with the data as : ", data);
         this.setState({
             [`child_${index}_display`]: !this.state[`child_${index}_display`],
             [`child_${index}`]: data
@@ -37,9 +36,9 @@ class SmartTable extends Component {
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- /*
- Drag Events
-  */
+     /*
+      * Drag Events
+      */
     drag = (event) => {
         event.dataTransfer.setData('source', event.target.id);
     }
